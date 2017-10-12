@@ -19,4 +19,7 @@ public class TestController extends Controller {
         System.out.println(testModels);
         renderJson("json",testModels);  //向前台返回json  {"json":[....]}
     }
+    public void testt() {
+        render("/static/login.html");
+    }
 }

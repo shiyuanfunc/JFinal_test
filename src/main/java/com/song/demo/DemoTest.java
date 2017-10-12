@@ -1,6 +1,7 @@
 package com.song.demo;
 
 import com.jfinal.config.*;
+import com.jfinal.ext.handler.ContextPathHandler;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.activerecord.CaseInsensitiveContainerFactory;
@@ -20,6 +21,7 @@ public class DemoTest extends JFinalConfig{
 
     @Override
     public void configRoute(Routes routes) {
+
         routes.add("/test",TestController.class);
     }
 
@@ -45,6 +47,5 @@ public class DemoTest extends JFinalConfig{
 
     @Override
     public void configHandler(Handlers handlers) {
-
     }
 }
